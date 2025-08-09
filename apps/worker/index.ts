@@ -1,3 +1,6 @@
+import dotenv from 'dotenv'
+dotenv.config({ path: '../../.env' })
+
 import axios from "axios";
 import { createConsumerGroupIfNotExists, xAckBulk, xReadGroup } from "redisstream/client";
 import { prismaClient } from "store/client";

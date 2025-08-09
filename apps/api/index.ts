@@ -1,3 +1,6 @@
+import dotenv from 'dotenv'
+dotenv.config({ path: '../../.env' })
+
 import jwt from "jsonwebtoken";
 import express from "express"
 import { prismaClient } from "store/client";
